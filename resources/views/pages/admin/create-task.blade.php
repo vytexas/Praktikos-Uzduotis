@@ -56,7 +56,7 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control shadow" placeholder="Savininko Vardas" name="owner" required>
+                    <input type="text" class="form-control shadow" placeholder="Savininko V_P" name="owner" required>
                     @error('owner')
                     <strong class="text-danger">{{ $message }}</strong>
                     @enderror

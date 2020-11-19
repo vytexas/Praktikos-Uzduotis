@@ -9,10 +9,11 @@
             <thead class="thead-dark">
             <tr>
                 <th scope="col">ID</th>
+		        <th scope="col">Bėda</th>
                 <th scope="col">Markė</th>
                 <th scope="col">Modelis</th>
                 <th scope="col">Pagaminimo Metai</th>
-                <th scope="col">Savininko Vardas</th>
+                <th scope="col">Savininko V_P</th>
                 <th scope="col">Telefonas</th>
                 <th scope="col">Atlikti Iki</th>
                 <th scope="col">Statusas</th>
@@ -24,7 +25,8 @@
             @foreach($myTask as $task)
                 <tr>
                     <th scope="row">{{ $task->id }}</th>
-                    <td>{{ $task->brand }}</td>
+                    <td>{{ $task->task }}</td>
+		            <td>{{ $task->brand }}</td>
                     <td>{{ $task->model }}</td>
                     <td>{{ $task->year }}</td>
                     <td>{{ $task->owner }}</td>

@@ -13,10 +13,11 @@
                 <th scope="col">Markė</th>
                 <th scope="col">Modelis</th>
                 <th scope="col">Pagaminimo Metai</th>
-                <th scope="col">Savininko Vardas</th>
+                <th scope="col">Savininko V_P</th>
                 <th scope="col">Telefonas</th>
                 <th scope="col">Atlikti Iki</th>
                 <th scope="col">Aprašymas</th>
+                <th scope="col">Statusas</th>
                 <th scope="col">Veiksmai</th>
             </tr>
             </thead>
@@ -32,6 +33,7 @@
                     <td>{{ $task->phone }}</td>
                     <td>{{ $task->due_to }}</td>
                     <td>{{ $task->description }}</td>
+                    <td>{{ $task->status }}</td>
                     <td>
                         <a href="{{ url('/uzduociu-valdymas/istrinti-uzduoti', $task->id) }}" class="px-2 mx-1">
                             <i class="fas fa-trash"></i>
